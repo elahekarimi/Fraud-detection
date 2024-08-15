@@ -39,3 +39,18 @@ To get started with this project, follow these steps:
    ```bash
    git clone https://github.com/yourusername/fraud-detection-xgboost.git
    cd fraud-detection-xgboost
+
+
+Model Evaluation
+The model is evaluated using several metrics:
+
+Accuracy: Proportion of correctly classified instances.
+Precision and Recall: Performance measures for the positive class.
+AUC-ROC Curve: Performance measure for binary classification.
+Confusion Matrix: Visualization of true vs. predicted labels.
+Visualizations
+This project includes various visualizations to understand model performance and data distributions:
+
+Boxplots: Visualize the distribution of features.
+Distribution Plots: Show the distribution of transaction amounts and other features.
+Confusion Matrix: Assess the number of true positives, false positives, true negatives, and false negatives.
