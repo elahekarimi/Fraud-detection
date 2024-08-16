@@ -6,16 +6,23 @@ This repository contains a machine learning project aimed at detecting fraudulen
 
 ## Table of Contents
 
-1. [Project Description](#project-description)
-2. [Features](#features)
-3. [Setup and Installation](#setup-and-installation)
-4. [Usage](#usage)
-5. [Data](#data)
-6. [Model Evaluation](#model-evaluation)
-7. [Visualizations](#visualizations)
-8. [Contributing](#contributing)
-9. [License](#license)
+1.  [dataset](#dataset)
+2.  [Project Description](#project-description)
+3. [Features](#features)
+4. [Setup and Installation](#setup-and-installation)
+5. [Usage](#usage)
+6. [Data](#data)
+7. [Model Evaluation](#model-evaluation)
+8. [Visualizations](#visualizations)
+9. [Contributing](#contributing)
+10. [License](#license)
 
+
+## Dataset
+The dataset contains transactions made by credit cards in September 2013 by European cardholders.
+This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions.
+
+It contains only numerical input variables which are the result of a PCA transformation. Unfortunately, due to confidentiality issues, we cannot provide the original features and more background information about the data. Features V1, V2, … V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'. Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the transaction Amount, this feature can be used for example-dependant cost-sensitive learning. Feature 'Class' is the response variable and it takes value 1 in case of fraud and 0 otherwise
 ## Project Description
 
 This project utilizes the XGBoost algorithm to classify transactions as fraudulent or regular. It includes the following steps:
